@@ -3,9 +3,15 @@ def map(array)
 end 
 
 def reduce(array, starting_point = nil)
-  sum = 
   if starting_point  
-  array.each { |num| yield(sum += num)}
+    sum = starting_point
+    i = 0
+  else 
+    sum = array[0]
+    i = 1
+  while i < array.length  
+    
+  
   
   return sum 
 end 
