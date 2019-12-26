@@ -2,7 +2,9 @@ def map(array)
   array.map { |ele| yield(ele)}
 end 
 
-def reduce(source_array, starting_point = 0)
-  source_array.each { |num| yield(starting_point += num)}
-  return starting_point
+def reduce(array, starting_point = 0)
+  sum = starting_point
+  array.each { |num| yield(sum += num)}
+  
+  return sum 
 end 
