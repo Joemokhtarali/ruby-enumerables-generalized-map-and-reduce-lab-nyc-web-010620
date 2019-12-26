@@ -1,3 +1,3 @@
-def my_own_map(array, block) 
-  array.map { block }
+def map(array) 
+  array.map { |ele| yield(ele)}
 end 
