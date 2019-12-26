@@ -3,6 +3,7 @@ def map(array)
 end 
 
 def reduce(array, starting_point = nil)
+  sum = 
   if starting_point  
   array.each { |num| yield(sum += num)}
   
